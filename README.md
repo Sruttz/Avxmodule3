@@ -1,41 +1,44 @@
-# Project Title
+#   Creating a Token & Deploying
 
-Simple overview of use/purpose.
+In this project , we have initialised a hardhat js project and in Contracts , we have written our own smart contract which creates a token.
 
-## Description
+## Description 
 
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+The smart contract creates a token called a Sponge and also mints, transfer, burn, approves and check the balance of the tokens. Then , we are deploying it on the hardhat network in the deploy.js file
 
 ### Executing program
+To run this program, you can download the project by downloading the zip file under code. OR
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
+You can try running the following commands 
+
+```shell
+npm install
+npm install @openzeppelin/contracts@4.9.0 -g
 ```
 
-## Help
-
-Any advise for common problems or issues.
+```shell
+npm install @nomicfoundation/hardhat-toolbox -g
 ```
-command to run if program contains helper info
+
+```shell
+npx hardhat init
+```
+
+```shell
+npx hardhat compile
+```
+
+
+```shell
+npx hardhat run scripts/deploy.js
 ```
 
 ## Authors
 
-Contributors names and contact info
+Sruthika Sivakumar
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+@sruthikaaas@gmail.com
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
